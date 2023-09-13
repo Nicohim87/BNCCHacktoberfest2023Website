@@ -15,7 +15,7 @@ p{
 }
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 700%;
     text-align: center;
     margin-top: 2em;
@@ -92,7 +92,7 @@ h2{
     box-sizing: border-box;
 }
 
-#inside{
+#insideContent{
     height: 100%;
     width: 100%;
     border: 5px solid #040078;
@@ -121,7 +121,7 @@ h2{
     box-sizing: border-box;
 }
 
-#txtBox{
+#labelBox{
     transform: translate(-50%, 0%);
     left: 50vw;
     width: 6.5em;
@@ -129,7 +129,7 @@ h2{
     position: relative;
 }
 
-.txt{
+#label{
     font-size: 150%;
     color: white;
     text-align: center;
