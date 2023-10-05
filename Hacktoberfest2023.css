@@ -16,7 +16,7 @@ p{
 
 h1{
     font-family: "Courier New", Courier, monospace;
-    font-size: 700%;
+    font-size: 3.5em;
     text-align: center;
     margin-top: 2em;
     margin-bottom: -1em;
@@ -146,6 +146,7 @@ p{
 .coloumnBox{
     width: 90vw;
     margin-left: 5vw;
+    margin-right: 5vw;
     background-color: #444444;
     padding: 2em 1.3em;
     border-radius: 3em;
