@@ -91,7 +91,6 @@ p{
 
 #mainImgBox{
     width:100vw;
-    margin-top: -6em;
     aspect-ratio: 16/9;
     position: relative;
 }
@@ -106,7 +105,7 @@ p{
 
 #secondImg{
     margin-left: 45vw;
-    width: 30em;
+    width: 40vw;
     aspect-ratio: 1;
     box-sizing: border-box;
 }
@@ -130,10 +129,10 @@ p{
 }
 
 #content{
-    height: 17em;
+    height: 20em;
     width: 70vw;
     padding: 5px;
-    margin: -8.5em 15vw -8.5em 15vw;
+    margin: -5em 15vw -10em 15vw;
     background-color: white;
     z-index: 5;
     border-radius: 3em;
@@ -191,7 +190,7 @@ p{
     margin-left: 5vw;
     margin-right: 5vw;
     background-color: #444444;
-    padding: 2em 1.3em;
+    padding: 1.25em 1.3em;
     border-radius: 3em;
     box-sizing: border-box;
 }
@@ -220,7 +219,12 @@ p{
     display: flex;
 }
 
-@media screen and (aspect-ratio > 1/1){
+.noModifier{
+    margin: 0%;
+    padding: 0%;
+}
+
+@media screen and (aspect-ratio > 3/2){
 
     .dynamic-dFlex-1{
         display: flex;
@@ -228,8 +232,8 @@ p{
 
     .mainBox{
         padding: 1em 1em .5em;
-        margin: 1% 2%;
-        width: 21%;
+        margin: .75em 2%;
+        width: 50%;
         min-height: 30vh;   
         border-radius: 2em;
         background-color: #ececec;
@@ -237,7 +241,7 @@ p{
     }
 }
 
-@media screen and (aspect-ratio <= 1/1){
+@media screen and (aspect-ratio <= 3/2){
     .mainBox{
         padding: 1em 1em .5em 1em;
         margin: 1% 2%;
@@ -247,5 +251,22 @@ p{
         border-radius: 2em;
         background-color: #ececec;
         box-sizing: border-box;
+    }
+}
+
+@media screen and (aspect-ratio > 4/5){
+    .dynamic-dFlex-2{
+        display: flex;
+    }
+}
+
+@media screen and (aspect-ratio <= 9/10){
+    #secondImg{
+        max-width: 0px;
+        max-height: 0px;
+    }
+    
+    #imgTextBox{
+        width: 80vw;
     }
 }
