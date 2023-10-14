@@ -28,19 +28,25 @@ p{
 }
 
 h1{
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Poppins', Courier, monospace;
     font-size: 3.5em;
     margin-top: 0em;
     margin-bottom: -.3em;
     z-index: 10;
     position: relative;
+    letter-spacing: 3px;
 }
 
 h2{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Inter;
+    font-size: 20px;
     margin-top: 1em;
     z-index: 10;
     position: relative;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 h3{
@@ -53,6 +59,7 @@ h3{
     text-align: center;
     margin-top: -0.65em;
     margin-bottom: 10vh;
+    letter-spacing: 0.5px;
 }
 
 h5{
@@ -205,6 +212,7 @@ p{
     flex-direction: column;
     flex: auto;
     justify-content: flex-start;
+    gap: 3vh;
     /* padding-top: 2em; */
 }
 
@@ -217,7 +225,6 @@ p{
     font-weight: 600;
     line-height: 113%; /* 45.2px */
     margin: 0vh;
-    margin-bottom: 2vh;
 }
 
 #problem p {
