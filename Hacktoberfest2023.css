@@ -161,25 +161,43 @@ p{
 /* PROBLEM SECTION START */
 #problem{
     width: 100vw;
-    padding-top: 200px;
-    height: auto;
+    padding-top: 40vh;
+    height: 305vh;
     background-color: #D9E0EA;
-    position: relative;
+    position: relative; 
     box-sizing: border-box;
+    background: radial-gradient(50.42% 18.06% at 50% 82.46%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(217, 224, 234, 0.00) 56.97%, #202020 61.23%), #D9E0EA;
+}
+
+#problemImg-1 {
+    margin-left: -10px;
+}
+
+#problemImg-2 {
+    margin-right: -10px;
 }
 
 .problemBox {
     display: inline-flex;
-    align-items: center;
-    gap: 99px;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 0 100px 0 100px;
+}
+
+.problemBox.content-1 {
+    margin-bottom: 12vh;
+}
+
+.problemBox.content-2 {
+    margin-bottom: 40vh;
 }
 
 .problemContent {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    align-self: stretch;
+    flex: auto;
+    justify-content: flex-start;
+    /* padding-top: 2em; */
 }
 
 #problem h3 {
@@ -190,6 +208,8 @@ p{
     font-style: normal;
     font-weight: 600;
     line-height: 113%; /* 45.2px */
+    margin: 0vh;
+    margin-bottom: 2vh;
 }
 
 #problem p {
@@ -203,6 +223,18 @@ p{
 }
 
 /* PROBLEM SECTION END */
+
+/* SOLUTION */
+#solutionBox h3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 113%; /* 45.2px */
+    text-align: center;
+}
+/* END */
 
 #label{
     margin-top: 3em;
