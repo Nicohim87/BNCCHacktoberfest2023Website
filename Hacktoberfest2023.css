@@ -183,15 +183,17 @@ p{
     background-color: #D9E0EA;
     position: relative; 
     box-sizing: border-box;
-    background: radial-gradient(50.42% 18.06% at 50% 82.46%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(217, 224, 234, 0.00) 56.97%, #202020 61.23%), #D9E0EA;
+    background: radial-gradient(50.42% 18.06% at 50% 82.46%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, #D9E0EA 60%, #202020 62.5%), #D9E0EA;
 }
 
 #problemImg-1 {
-    margin-left: -10px;
+    max-width: 40vw;
+    aspect-ratio: 16/9;
 }
 
 #problemImg-2 {
-    margin-right: -10px;
+    max-width: 40vw;
+    aspect-ratio: 16/9;
 }
 
 .problemBox {
@@ -199,6 +201,39 @@ p{
     align-items: flex-start;
     gap: 70px;
     padding: 0 100px 0 100px;
+}
+
+@media screen and (aspect-ratio >= 1){
+    .problemBox{
+        align-items: center;
+    }
+}
+
+@media screen and (aspect-ratio < 1/1){
+    .problemBox{
+        gap: 70px;
+        padding: 0 100px 0 100px;
+        display: inline-block;
+        align-items: self-start;
+    }
+
+    #problemImg-1 {
+        margin-left: 0px;
+        max-width: 80vw;
+        aspect-ratio: 16/9;
+    }
+    
+    #problemImg-2 {
+        margin-right:   0px;
+        max-width: 80vw;
+        aspect-ratio: 16/9;
+    }
+    .problemContent h3{
+        text-align: center !important;
+    }
+    .problemContent p{
+        text-align: center !important;
+    }
 }
 
 .problemBox.content-1 {
@@ -250,6 +285,10 @@ p{
     font-weight: 600;
     line-height: 113%; /* 45.2px */
     text-align: center;
+}
+
+#solutionBox{
+    margin-top: 5em;
 }
 /* END */
 
