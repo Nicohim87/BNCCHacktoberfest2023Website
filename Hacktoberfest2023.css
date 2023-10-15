@@ -176,12 +176,22 @@ p{
 /* PROBLEM SECTION START */
 #problem{
     width: 100vw;
-    padding-top: 40vh;
-    height: 305vh;
+    padding-top: 36vh;
+    height: auto;
     background-color: #D9E0EA;
     position: relative; 
     box-sizing: border-box;
-    background: radial-gradient(50.42% 18.06% at 50% 82.46%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(217, 224, 234, 0.00) 56.97%, #202020 61.23%), #D9E0EA;
+}
+
+#problem h3 {
+    color: #0051A3;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 113%; /* 45.2px */
+    margin: 0vh;
 }
 
 #problemImg-1 {
@@ -204,7 +214,7 @@ p{
 }
 
 .problemBox.content-2 {
-    margin-bottom: 32vh;
+    margin-bottom: 8vh;
 }
 
 .problemContent {
@@ -216,19 +226,17 @@ p{
     /* padding-top: 2em; */
 }
 
-#problem h3 {
-    color: #0051A3;
-    text-align: left;
-    font-family: Poppins;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 113%; /* 45.2px */
-    margin: 0vh;
-}
+
 /* PROBLEM SECTION END */
 
 /* SOLUTION */
+
+#solutionBox {
+    /* margin-top: auto; */
+    padding-top: 14vh;
+    background: linear-gradient(180deg, #D9E0EA 0%, #202020 8.7%), #212121;
+}
+
 #solutionBox h3 {
     color: #FFF;
     font-family: Poppins;
@@ -237,6 +245,7 @@ p{
     font-weight: 600;
     line-height: 113%; /* 45.2px */
     text-align: center;
+    margin-top: 4vh;
 }
 
 #solutionBox p {
@@ -253,8 +262,8 @@ p{
 
 #solutionCardBox {
     display: flex;
-    flex: 1 1 0;
-    /* border-style: solid; */
+    flex: auto;
+    flex-wrap: wrap;
     margin-top: 10vh;
     justify-content: center;
     gap: 6vw;
@@ -264,7 +273,6 @@ p{
     width: 211px;
     display: flex;
     flex-direction: column;
-    /* border-style: solid; */
 }
 
 .numIcon {
@@ -276,6 +284,13 @@ p{
     width: 13.188rem;
     height: auto;
     margin-bottom: 10px;
+}
+
+#lineBG {
+    width: 1779px;
+    height: 95.734px;
+    stroke-width: 20px;
+    stroke: #D9E0EA;
 }
 
 /* END */
