@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Poppins;
+    src: url(https://fonts.googleapis.com/css?family=Poppins);
+}
+
 body{
     padding: 0%;
     margin: 0%;
@@ -23,28 +28,38 @@ p{
 }
 
 h1{
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Poppins', Courier, monospace;
     font-size: 3.5em;
     margin-top: 0em;
     margin-bottom: -.3em;
     z-index: 10;
     position: relative;
+    letter-spacing: 3px;
 }
 
 h2{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Inter;
+    font-size: 20px;
     margin-top: 1em;
     z-index: 10;
     position: relative;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 113%; 
     color: white;
     text-align: center;
     margin-top: -0.65em;
     margin-bottom: 10vh;
+    letter-spacing: 0.5px;
 }
 
 h5{
@@ -73,7 +88,11 @@ p{
     font-size: .8em;
 }
 
+/* NAV BAR START */
 #topBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0%;
     width: 100vw;
     height: 5em;
@@ -81,13 +100,25 @@ p{
     z-index: 20;
 }
 
+#topBox-button {
+    height: 60px;
+    margin-right: 80px;
+}
+
 #logoBox{
-    height: 3em;
-    margin-left: 2em;
+    margin-left: 80px;
     margin-top: 0.3em;
     margin-bottom: 0%;
     box-sizing: border-box;
+    padding-top: 0px;
 }
+
+#logoBox img {
+    width: 355px;
+    height: 49px;
+    margin: 0px !important;
+}
+/* NAV BAR END */
 
 #mainImgBox{
     width:100vw;
@@ -142,13 +173,83 @@ p{
     box-shadow: 1.5px 1.5px 1.5px #09090977;
 }
 
+/* PROBLEM SECTION START */
 #problem{
     width: 100vw;
-    height: 100vh;
+    padding-top: 40vh;
+    height: 305vh;
     background-color: #D9E0EA;
-    position: relative;
+    position: relative; 
     box-sizing: border-box;
+    background: radial-gradient(50.42% 18.06% at 50% 82.46%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(217, 224, 234, 0.00) 56.97%, #202020 61.23%), #D9E0EA;
 }
+
+#problemImg-1 {
+    margin-left: -10px;
+}
+
+#problemImg-2 {
+    margin-right: -10px;
+}
+
+.problemBox {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 0 100px 0 100px;
+}
+
+.problemBox.content-1 {
+    margin-bottom: 12vh;
+}
+
+.problemBox.content-2 {
+    margin-bottom: 40vh;
+}
+
+.problemContent {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: flex-start;
+    gap: 3vh;
+    /* padding-top: 2em; */
+}
+
+#problem h3 {
+    color: #0051A3;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 113%; /* 45.2px */
+    margin: 0vh;
+}
+
+#problem p {
+    color: #202020;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.523%; /* 21.684px */
+}
+
+/* PROBLEM SECTION END */
+
+/* SOLUTION */
+#solutionBox h3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 113%; /* 45.2px */
+    text-align: center;
+}
+/* END */
 
 #label{
     margin-top: 3em;
