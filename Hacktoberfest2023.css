@@ -84,6 +84,7 @@ p{
 #logoBox{
     height: 3em;
     margin-left: 2em;
+    margin-right: 2em;
     margin-top: 0.3em;
     margin-bottom: 0%;
     box-sizing: border-box;
@@ -293,5 +294,11 @@ p{
 
     #imgTextBox{
         margin-top: .3em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #imgTextBox{
+        text-align: center;
     }
 }
