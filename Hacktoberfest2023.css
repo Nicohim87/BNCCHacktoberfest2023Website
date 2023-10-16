@@ -120,6 +120,7 @@ p{
 }
 /* NAV BAR END */
 
+/* Hero Section */
 #mainImgBox{
     width:100vw;
     aspect-ratio: 16/9;
@@ -160,15 +161,18 @@ p{
     position: absolute;
 }
 
+/* END */
+
+/* CONTENT */
 #content{
-    height: 20em;
+    height: 8em;
     width: 70vw;
-    padding: 5px;
+    padding: 30px;
     margin: -5em 15vw -10em 15vw;
     background-color: white;
     z-index: 5;
-    border-radius: 3em;
-    position: relative;
+    border-radius: 2em;
+    position: absolute;
     box-sizing: border-box;
     box-shadow: 1.5px 1.5px 1.5px #09090977;
 }
@@ -176,7 +180,7 @@ p{
 /* PROBLEM SECTION START */
 #problem{
     width: 100vw;
-    padding-top: 36vh;
+    padding-top: 20vh;
     height: auto;
     background-color: #D9E0EA;
     position: relative; 
