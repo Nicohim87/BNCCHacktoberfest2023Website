@@ -14,7 +14,11 @@
         <div id = "logoBox" class = "dFlex">
             <img src="./Images/logo.svg" alt="" style = "margin-top: .7em;">
         </div>
-        <button id="topBox-button">Start Coding</button>
+        <div id="topBox-button">
+            <h5>
+                Start Coding
+            </h5>
+        </div>
     </div>
     <div id="mainImgBox">
         <img src="./Images/bg.svg" alt="error" id ="img">
@@ -31,11 +35,11 @@
     </div>
 
     <div id = "content">
-
+        awkdowakdoa
     </div>
-
+    
+    <!-- Problem -->
     <div id = "problem">
-        <!-- Problem -->
         <div class="problemBox content-1">
             <img src="Images/Rectangle 2.png" alt="city-of-polution" id="problemImg-1">
             <div class="problemContent centerPos">
@@ -59,11 +63,42 @@
         </div>
     </div>
 
-    <div id = "transitionGradient"></div>
-
-    <!-- Solution -->   
+    <!-- Solution -->
     <div id="solutionBox">
         <h3>Yang Harus Dilakukan Selanjutnya</h3>
+        <div id="solutionCardBox">
+            <div class="solutionCard">
+                <img src="Images/Num 1.svg" alt="Number 1 Icon" class="numIcon">
+                <img src="Images/Img 1 Solution.png" alt="air-polution" class="solutionImg">
+                <p>Mencari kasus nyata tentang pencemaran lingkungan di-Indonesia</p>
+            </div>
+
+            <div class="solutionCard">
+                <img src="Images/Num 2.svg" alt="Number 2 Icon" class="numIcon">
+                <img src="Images/Img 2 Solution.png" alt="air-polution" class="solutionImg">
+                <p>Mencari kasus nyata tentang pencemaran lingkungan di-Indonesia</p>
+            </div>
+
+            <div class="solutionCard">
+                <img src="Images/Num 3.svg" alt="Number 3 Icon" class="numIcon">
+                <img src="Images/Img 3 Solution.png" alt="air-polution" class="solutionImg">
+                <p>Mencari kasus nyata tentang pencemaran lingkungan di-Indonesia</p>
+            </div>
+
+            <div class="solutionCard">
+                <img src="Images/Num 4.svg" alt="Number 4 Icon" class="numIcon">
+                <img src="Images/Img 4 Solution.png" alt="air-polution" class="solutionImg">
+                <p>Mencari kasus nyata tentang pencemaran lingkungan di-Indonesia</p>
+            </div>
+        </div>
+        <!-- Line Shape -->
+        <div id="lineBG">
+            <img src="Images/Lines.svg" alt="Break Lines">
+        </div>
+        <!-- <div id="bgElementsSolution">
+            <img src="Images/bg-elements.svg" alt="bg-elements">
+        </div> -->
+
     </div>
 
     <h3 id="label">Your Workspace</h3>
@@ -658,4 +693,13 @@
         <h6 style="font-size: .5em;">Designed by Aldo Arista &emsp;&emsp; Coded by Nico Himawan and Aldo Arista</h6>
     </div>
 </body>
+<script type="text/javascript">
+    let button = document.getElementById("topBox-button");
+    let label = document.getElementById("label")
+
+    button.addEventListener("click", ()=>{
+        label.scrollIntoView();
+        window.scrollBy(0, -50);
+    });
+</script>
 </html>
