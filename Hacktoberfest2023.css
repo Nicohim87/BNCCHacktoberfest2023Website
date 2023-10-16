@@ -106,7 +106,9 @@ p{
 }
 
 #logoBox{
-    margin-left: 80px;
+    height: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
     margin-top: 0.3em;
     margin-bottom: 0%;
     box-sizing: border-box;
@@ -199,11 +201,13 @@ p{
 }
 
 #problemImg-1 {
-    margin-left: -10px;
+    max-width: 40vw;
+    aspect-ratio: 16/9;
 }
 
 #problemImg-2 {
-    margin-right: -10px;
+    max-width: 40vw;
+    aspect-ratio: 16/9;
 }
 
 .problemBox {
@@ -211,6 +215,39 @@ p{
     align-items: flex-start;
     gap: 70px;
     padding: 0 100px 0 100px;
+}
+
+@media screen and (aspect-ratio >= 1){
+    .problemBox{
+        align-items: center;
+    }
+}
+
+@media screen and (aspect-ratio < 1/1){
+    .problemBox{
+        gap: 70px;
+        padding: 0 100px 0 100px;
+        display: inline-block;
+        align-items: self-start;
+    }
+
+    #problemImg-1 {
+        margin-left: 0px;
+        max-width: 80vw;
+        aspect-ratio: 16/9;
+    }
+    
+    #problemImg-2 {
+        margin-right:   0px;
+        max-width: 80vw;
+        aspect-ratio: 16/9;
+    }
+    .problemContent h3{
+        text-align: center !important;
+    }
+    .problemContent p{
+        text-align: center !important;
+    }
 }
 
 .problemBox.content-1 {
@@ -436,5 +473,11 @@ p{
 
     #imgTextBox{
         margin-top: .3em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #imgTextBox{
+        text-align: center;
     }
 }
