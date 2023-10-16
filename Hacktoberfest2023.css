@@ -179,13 +179,12 @@ p{
 #problem{
     width: 100vw;
     padding-top: 40vh;
-    height: 305vh;
     background-color: #D9E0EA;
     position: relative; 
     box-sizing: border-box;
-    background: radial-gradient(50.42% 18.06% at 50% 82.46%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, #D9E0EA 60%, #202020 62.5%), #D9E0EA;
+    background-color:#D9E0EA;  
 }
-
+/* radial-gradient(50.42% 18.06% at 50% 82.46%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, #D9E0EA 60%, #202020 62.5%), #D9E0EA; */
 #problemImg-1 {
     max-width: 40vw;
     aspect-ratio: 16/9;
@@ -276,6 +275,11 @@ p{
 
 /* PROBLEM SECTION END */
 
+#transitionGradient{
+    background:linear-gradient(#D9E0EA, #00000000);
+    height: 10vh;
+}
+
 /* SOLUTION */
 #solutionBox h3 {
     color: #FFF;
@@ -285,6 +289,7 @@ p{
     font-weight: 600;
     line-height: 113%; /* 45.2px */
     text-align: center;
+    margin-top: 10vh;
 }
 
 #solutionBox{
