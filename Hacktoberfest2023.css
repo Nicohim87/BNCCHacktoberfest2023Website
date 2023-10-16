@@ -233,7 +233,7 @@ p{
 
 #solutionBox {
     /* margin-top: auto; */
-    padding-top: 14vh;
+    padding-top: 20vh;
     background: linear-gradient(180deg, #D9E0EA 0%, #202020 8.7%), #212121;
 }
 
@@ -267,6 +267,7 @@ p{
     margin-top: 10vh;
     justify-content: center;
     gap: 6vw;
+    margin-bottom: 10vh;
 }
 
 .solutionCard {
@@ -284,13 +285,6 @@ p{
     width: 13.188rem;
     height: auto;
     margin-bottom: 10px;
-}
-
-#lineBG {
-    width: 1779px;
-    height: 95.734px;
-    stroke-width: 20px;
-    stroke: #D9E0EA;
 }
 
 /* END */
