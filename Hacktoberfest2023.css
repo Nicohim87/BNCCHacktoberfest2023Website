@@ -112,6 +112,7 @@ p{
 }
 
 #topBox-button h5{
+    font-family: Poppins;
     top: 50%;
     transform: translate(0%, -50%);
 }
@@ -251,7 +252,7 @@ p{
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    height: 8em;
+    height: 24vh;
     width: 70vw;
     padding: 30px;
     margin: -5em 15vw -10em 15vw;
