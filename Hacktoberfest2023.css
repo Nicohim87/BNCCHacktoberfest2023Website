@@ -245,7 +245,11 @@ p{
 /* END */
 
 /* CONTENT */
-#content{
+/* #content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
     height: 8em;
     width: 70vw;
     padding: 30px;
@@ -256,7 +260,63 @@ p{
     position: absolute;
     box-sizing: border-box;
     box-shadow: 1.5px 1.5px 1.5px #09090977;
+    font-family: Poppins;
+    font-size:1rem;
+    font-weight: bold;
+} */
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 8em;
+    width: 70vw;
+    padding: 30px;
+    margin: -5em 15vw -10em 15vw;
+    background-color: white;
+    z-index: 5;
+    border-radius: 2em;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 1.5px 1.5px 1.5px #09090977;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: bold;
 }
+
+/* Style for Webkit-based browsers */
+.contentTeams {
+    white-space: nowrap;
+    overflow-x: scroll;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-container {
+    display: flex;
+    gap: 2vw;
+    height: 14vh;
+    width: auto;
+    flex-direction: row;
+    scrollbar-width: thin; /* Set scrollbar width */
+    scrollbar-color: transparent transparent; /* Set scrollbar color to transparent */
+}
+
+.scrolling-container::-webkit-scrollbar {
+    width: 8px; /* Set Webkit scrollbar width */
+}
+
+.scrolling-container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set thumb color to transparent */
+}
+
+.scrolling-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Set track color to transparent */
+}
+
+
+
 
 /* PROBLEM SECTION START */
 #problem{
