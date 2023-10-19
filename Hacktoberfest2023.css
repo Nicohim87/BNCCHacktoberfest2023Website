@@ -517,6 +517,7 @@ p{
 @media screen and (aspect-ratio > 4/5){
     .dynamic-dFlex-2{
         display: flex;
+        width: 50%;
     }
 }
 
