@@ -19,6 +19,7 @@ img{
 }
 
 p{
+    font-size: .85em !important;
     text-align: justify;
 }
 
@@ -42,6 +43,7 @@ h2{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: justify;
 }
 
 h3{
@@ -435,6 +437,7 @@ p{
     flex-wrap: wrap;
     margin-top: 10vh;
     justify-content: center;
+    align-items: baseline;
     gap: 6vw;
     margin-bottom: 10vh;
 }
